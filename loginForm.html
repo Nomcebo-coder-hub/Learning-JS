@@ -6,5 +6,23 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <p>Welcome. Please log in</p>
+    <form>
+      <label form="usernameInput">Username </label
+      ><input type="text" id="usernameInput" /><br />
+      <label form="passwordInput">Password </label
+      ><input type="password" id="passwordInput" />
+      <p id="message"></p>
+      <br /><br />
+      <a href="#">Log in</a>
+    </form>
+
+    <script>
+      function verifyUser() {
+        var username = document.getElementById("usernameInput").value;
+        var password = document.getElementById("passwordInput").value;
+      }
+    </script>
+  </body>
 </html>
