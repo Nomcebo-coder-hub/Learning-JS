@@ -6,5 +6,16 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <p id="outputText"></p>
+
+    <script>
+      var someVariable = 100;
+      someFunction();
+
+      function someFunction() {
+        document.getElementById("outputText").innerHTML = someVariable;
+      }
+    </script>
+  </body>
 </html>
