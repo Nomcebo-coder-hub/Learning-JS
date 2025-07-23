@@ -14,7 +14,7 @@
         </td>
       </tr>
       <tr>
-        <td>7</td>
+        <td onclick="digitBtnPressed(7)">7</td>
         <td>8</td>
         <td>9</td>
         <td>x</td>
@@ -32,11 +32,19 @@
         <td>+</td>
       </tr>
       <tr>
-        <td colspan="2"></td>
+        <td colspan="2">0</td>
 
         <td>AC</td>
         <td>/</td>
       </tr>
+      <tr>
+        <td colspan="4">=</td>
+      </tr>
     </table>
+    <script>
+      function digitBtnPressed(button) {
+        document.getElementById("inputBox").value = button;
+      }
+    </script>
   </body>
 </html>
