@@ -17,7 +17,7 @@
         <td onclick="digitBtnPressed(7)">7</td>
         <td onclick="digitBtnPressed(8)">8</td>
         <td onclick="digitBtnPressed(9)">9</td>
-        <td onclick="digitBtnPressed(x)">x</td>
+        <td>x</td>
       </tr>
       <tr>
         <td onclick="digitBtnPressed(4)">4</td>
@@ -29,7 +29,7 @@
         <td onclick="digitBtnPressed(1)">1</td>
         <td onclick="digitBtnPressed(2)">2</td>
         <td onclick="digitBtnPressed(3)">3</td>
-        <td>+</td>
+        <td onclick="operatorBtnPressed('+')">+</td>
       </tr>
       <tr>
         <td colspan="2" onclick="digitBtnPressed(0)">0</td>
@@ -43,6 +43,8 @@
     </table>
     <script>
       var newLine = true; //Boolean variable. Determines if the next hting the user types should be on a new line
+      var value;
+      var currentOperator;
 
       //Event handler for when any digit button is pressed
       function digitBtnPressed(button) {
@@ -58,6 +60,12 @@
       //Event handler for when the AC button is pressed
       function btnACPressed() {
         document.getElementById("inputBox").value = 0;
+        newLine = true;
+      }
+
+      function operatorBtnPressed(operator) {
+        currentOperator = operator;
+        value1 = parseInt(document.getElementById("inputBox").value);
         newLine = true;
       }
     </script>
