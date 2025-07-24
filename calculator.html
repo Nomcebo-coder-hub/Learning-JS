@@ -23,13 +23,13 @@
         <td onclick="digitBtnPressed(4)">4</td>
         <td onclick="digitBtnPressed(5)">5</td>
         <td onclick="digitBtnPressed(6)">6</td>
-        <td onclick="operatorBtnPressed('-')">-</td>
+        <td class="operatorButton" onclick="operatorBtnPressed('-')">-</td>
       </tr>
       <tr>
         <td onclick="digitBtnPressed(1)">1</td>
         <td onclick="digitBtnPressed(2)">2</td>
         <td onclick="digitBtnPressed(3)">3</td>
-        <td onclick="operatorBtnPressed('+')">+</td>
+        <td class="operatorButton" onclick="operatorBtnPressed('+')">+</td>
       </tr>
       <tr>
         <td class="digitButton" colspan="2" onclick="digitBtnPressed(0)">0</td>
@@ -38,7 +38,9 @@
         <td onclick="operatorBtnPressed('/')">/</td>
       </tr>
       <tr>
-        <td colspan="4" onclick="equalsBtnPressed()">=</td>
+        <td colspan="4" class="operatorButton" onclick="equalsBtnPressed()">
+          =
+        </td>
       </tr>
     </table>
     <script>
