@@ -38,7 +38,7 @@
         <td onclick="operatorBtnPressed('/')">/</td>
       </tr>
       <tr>
-        <td colspan="4" onclick="equalBtnPressed()">=</td>
+        <td colspan="4" onclick="equalsBtnPressed()">=</td>
       </tr>
     </table>
     <script>
@@ -63,6 +63,7 @@
         newLine = true;
       }
 
+      //Event handler for operator buttons
       function operatorBtnPressed(operator) {
         currentOperator = operator;
         value1 = parseInt(document.getElementById("inputBox").value);
@@ -70,8 +71,8 @@
       }
 
       //Event handler for eqauls to button
-      function equalBtnPressed() {
-        var value2 = parse(document.getAnimations("inputBox").value);
+      function equalsBtnPressed() {
+        var value2 = parseInt(document.getElementById("inputBox").value);
         var finalTotal;
 
         switch (currentOperator) {
